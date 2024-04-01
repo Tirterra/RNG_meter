@@ -25,5 +25,8 @@ for i in range(simulations):
 			continue # You got nothing, too bad!
 
 plt.plot(N, density/sum(density))
+plt.ylabel("Probability")
+plt.xlabel("Tries")
+plt.title("Density of a scythe blade with 200 magic find")
 plt.savefig("density.pdf")
 plt.show()
